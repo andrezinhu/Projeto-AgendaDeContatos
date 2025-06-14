@@ -15,17 +15,62 @@ body {
     box-sizing: border-box;
 }
 
-.container, form{
+.container{
     width: 100%;
     background-color: #f2f2f2;
     margin: 0 auto;
-    width: 100%;
+    max-width: 1000px;
     justify-content: center;
     font-family: "Roboto";
     text-align: center;
     border: #818181 solid 1px;
 }
+.formulario{
+    display: flex;
+    justify-content: center;
+}
 
+form {
+    display: block;
+    max-width: 700px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+#form-text{
+    padding-bottom: 16px;
+}
+
+#nome-contato{
+    margin-bottom: 8px;
+}
+
+#nome-contato, #numero-contato{
+    border: #818181 1px solid;
+}
+
+form input {
+    font-size: 16px;
+    background-color: #fff;
+    border: none;
+    border-bottom: 2px solid #818181;
+    padding: 8px;
+    margin: 0px 10px
+}
+
+form button{
+    font-size: 16px;
+    background-color: #fff;
+    padding: 8px;
+    border: 1px solid #818181;
+    color: #818181;
+}
+form button:hover{
+    background-color: rgb(3, 190, 3);
+    color: black;
+}
 
 #titulo{
     margin: 0 auto;
