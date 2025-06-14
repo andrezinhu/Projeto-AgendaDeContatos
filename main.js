@@ -2,6 +2,7 @@ const form = document.getElementById("form-add-contato");
 const nomeContato = [];
 const numeroContato = [];
 
+let i = 1; // Vai servir para contar os contatos
 let linhas = '';
 
 form.addEventListener('submit', function(e) {
@@ -14,7 +15,6 @@ form.addEventListener('submit', function(e) {
 function adicionaLinha(){
     const inputNomeContato = document.getElementById("nome-contato")
     const inputNumeroContato = document.getElementById("numero-contato")
-    let i = 1; // Vai servir para contar os contatos
 
     if(numeroContato.includes(inputNumeroContato.value)){
         alert(`O contato: ${inputNumeroContato.value} já foi inserida`);
